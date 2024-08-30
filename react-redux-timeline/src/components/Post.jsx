@@ -1,12 +1,7 @@
-// Post.jsx
 import React from "react";
 import { useDispatch } from "react-redux";
 import { likePost, addComment, repostPost } from "../redux/postsSlice";
 import './Post.css';
-
-import logo from '../images/SOCON.png';
-import messageIcon from '../images/messages.png';
-import notificationIcon from '../images/notification.png';
 
 const Post = ({ post }) => {
   const dispatch = useDispatch();
@@ -26,15 +21,6 @@ const Post = ({ post }) => {
 
   return (
     <div className="post-container">
-      {/* Header Section */}
-      <div className="header">
-        <img src={logo} alt="SoCon Logo" className="logo" />
-        <div className="header-icons">
-          <img src={messageIcon} alt="Messages" className="header-icon" />
-          <img src={notificationIcon} alt="Notifications" className="header-icon" />
-        </div>
-      </div>
-      
       {/* Post Content */}
       <div className="user-info">
         <img src={post.author.pfp} alt="Profile" className="profile-pic" />

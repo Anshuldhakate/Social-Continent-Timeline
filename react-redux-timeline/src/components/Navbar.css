@@ -1,0 +1,24 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1E1E1E;
+    border-bottom: 1px solid #333;
+  }
+  
+  .navbar-logo {
+    width: 120px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-icon {
+    width: 24px;
+    cursor: pointer;
+  }
+  

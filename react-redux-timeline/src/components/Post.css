@@ -1,5 +1,3 @@
-/* Post.css */
-
 .post-container {
   padding: 16px;
   border: 1px solid #ddd;
@@ -11,28 +9,6 @@
   margin: auto;
   max-width: 800px; 
   box-sizing: border-box; 
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd; 
-}
-
-.logo {
-  width: 120px; 
-}
-
-.header-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.header-icon {
-  width: 24px; 
-  cursor: pointer;
 }
 
 .user-info {
@@ -116,18 +92,6 @@
     max-width: 100%;
   }
 
-  .logo {
-    width: 100px; 
-  }
-
-  .header-icons {
-    gap: 10px;
-  }
-
-  .header-icon {
-    width: 20px; 
-  }
-
   .user-info {
     flex-direction: column;
     align-items: flex-start;
@@ -147,18 +111,6 @@
   .post-container {
     padding: 8px;
     max-width: 100%;
-  }
-
-  .logo {
-    width: 80px; 
-  }
-
-  .header-icons {
-    gap: 8px;
-  }
-
-  .header-icon {
-    width: 18px; 
   }
 
   .profile-pic {
