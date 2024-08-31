@@ -48,12 +48,11 @@ The state management is handled using Redux. Key components include:
 
 3. Running the Application
    Start the development server:
-  ```bash
    npm start
 
   Open your browser and navigate to http://localhost:3000.
 
- Building for Production
+ 4. Building for Production
   Build the application:
   npm run build 
   The production build will be available in the build directory.
