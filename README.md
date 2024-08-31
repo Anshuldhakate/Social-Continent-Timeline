@@ -4,6 +4,14 @@
 
 My Social-Continent-Timeline App is a web application that allows users to interact with posts through liking, commenting, and reposting. The application uses React and Redux for state management and follows modern best practices for a responsive and dynamic user experience.
 
+### Deployed Link- 
+https://classy-crumble-fedae2.netlify.app
+
+<br/>
+
+<img width="348" alt="Screenshot 2024-08-31 164607" src="https://github.com/user-attachments/assets/40f52572-0e92-4278-b41c-7f31fda9eab5">
+
+
 ### Architecture
 
 - **Frontend**: Built with React.js, utilizing functional components and hooks.
