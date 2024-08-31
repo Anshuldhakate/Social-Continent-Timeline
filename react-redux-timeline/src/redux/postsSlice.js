@@ -1,4 +1,3 @@
-// postsSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 import { simulateApiCall } from '../api';
 
@@ -23,15 +22,37 @@ const postsSlice = createSlice({
       if (post) {
         post.comments.count += 1;
         if (!post.comments.list) {
-          post.comments.list = []; // Initialize the list if it doesn't exist
+          post.comments.list = [];
         }
         post.comments.list.push(comment);
       }
     },
     repostPostSuccess(state, action) {
-      const post = state.posts.find((p) => p.hash === action.payload.hash);
-      if (post) {
-        post.reposts += 1;
+      const { hash } = action.payload;
+      const originalPost = state.posts.find((p) => p.hash === hash);
+
+      if (originalPost) {
+        originalPost.reposts += 1;
+
+        // If the original post doesn't have a reposts list, initialize it
+        if (!originalPost.repostsList) {
+          originalPost.repostsList = [];
+        }
+
+        // Create a new post object for the repost
+        const newRepost = {
+          ...originalPost,
+          hash: `repost_${new Date().getTime()}`, // Generate a unique hash for the repost
+          isRepost: true,
+          parentPost: originalPost.hash, // Store only the hash of the parent post
+          reposts: 0, // Reset repost count for the new post
+          comments: { count: 0, list: [] }, // Reset comments for the new post
+          likes: { count: 0 }, // Reset likes for the new post
+          repostsList: [], // Ensure new reposts start with an empty list
+        };
+
+        // Add the new repost to the repostsList of the original post
+        originalPost.repostsList.push(newRepost);
       }
     },
   },

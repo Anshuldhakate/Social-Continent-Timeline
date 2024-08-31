@@ -1,7 +1,6 @@
-// src/components/Timeline.jsx
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setPosts, likePost, addComment, repostPost } from '../redux/postsSlice';
+import { setPosts } from '../redux/postsSlice';
 import axios from 'axios';
 import Post from './Post';
 
@@ -25,13 +24,7 @@ const Timeline = () => {
   return (
     <div>
       {posts.map(post => (
-        <Post
-          key={post.hash}
-          post={post}
-          onLike={postId => dispatch(likePost(postId))}
-          onComment={(postId, comment) => dispatch(addComment({ postId, comment }))}
-          onRepost={postId => dispatch(repostPost(postId))}
-        />
+        <Post key={post.hash} post={post} />
       ))}
     </div>
   );
