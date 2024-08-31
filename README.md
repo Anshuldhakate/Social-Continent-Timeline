@@ -36,16 +36,35 @@ The state management is handled using Redux. Key components include:
 
 #### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+      1. Clone the repository:
+         ```bash
+         git clone <repository-url>
+         cd <repository-directory>
+      
+      2. Install dependencies:
+        ```bash
+         npm install.
 
-2. Install dependencies:
-  ```bash
-   npm install.
+3. Running the Application
+   Start the development server:
+   npm start
 
+  Open your browser and navigate to http://localhost:3000.
 
+ 4. Building for Production
+  Build the application:
+  npm run build 
+  The production build will be available in the build directory.
 
+#### Folder Structure
+- src/: Contains all source files.
+- components/: React components.
+- redux/: Redux-related files including slices, actions, and reducers.
+- api/: API interaction logic (e.g., simulateApiCall).
+- styles/: Custom styles.
+- App.js: Main application component.
+- main.js: Entry point for the React application.
 
+### Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
