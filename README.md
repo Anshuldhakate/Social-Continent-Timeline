@@ -2,14 +2,14 @@
 
 ### Overview
 
-My Social-Continent-Timeline App is a web application that allows users to interact with posts through liking, commenting, and reposting. The application is built using React and Redux for state management and follows modern best practices for a responsive and dynamic user experience.
+My Social-Continent-Timeline App is a web application that allows users to interact with posts through liking, commenting, and reposting. The application uses React and Redux for state management and follows modern best practices for a responsive and dynamic user experience.
 
 ### Architecture
 
 - **Frontend**: Built with React.js, utilizing functional components and hooks.
 - **State Management**: Managed with Redux, incorporating asynchronous actions and reducers to handle state updates.
 - **Backend**: Simulated with `https://api.socialcontinent.xyz/api/v1/post/suggested` for API interactions.
-- **Styling**: Custom styles using CSS, with a focus on dark theme and responsive design.
+- **Styling**: Custom CSS styles, focusing on dark themes and responsive design.
 
 ### State Management
 
@@ -44,19 +44,6 @@ The state management is handled using Redux. Key components include:
 2. Install dependencies:
   ```bash
    npm install.
-
-
-3. Running the Application
-   Start the development server:
-   npm start
-
-  Open your browser and navigate to http://localhost:3000.
-
- 4. Building for Production
-  Build the application:
-  npm run build 
-  The production build will be available in the build directory.
-
 
 
 
