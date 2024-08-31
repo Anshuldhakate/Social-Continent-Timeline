@@ -6,6 +6,8 @@ My Social-Continent-Timeline App is a web application that allows users to inter
 
 ### Deployed Link- 
 https://classy-crumble-fedae2.netlify.app
+### Output Video -
+https://drive.google.com/file/d/1KFOfPYFwSHE1l-6XO1cFerLFqlVBLQAn/view?usp=sharing
 
 <br/>
 
