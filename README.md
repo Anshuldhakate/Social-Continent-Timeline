@@ -43,7 +43,8 @@ The state management is handled using Redux. Key components include:
 
 2. Install dependencies:
   ```bash
-   npm install
+   npm install.
+
 
 3. Running the Application
    Start the development server:
@@ -57,14 +58,8 @@ The state management is handled using Redux. Key components include:
   npm run build 
   The production build will be available in the build directory.
 
-### Folder Structure
-- src/: Contains all source files.
-- components/: React components.
-- redux/: Redux-related files including slices, actions, and reducers.
-- api/: API interaction logic (e.g., simulateApiCall).
-- styles/: Custom styles.
-- App.js: Main application component.
-- main.js: Entry point for the React application.
 
-### Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+
+
+
